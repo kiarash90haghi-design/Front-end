@@ -134,14 +134,7 @@ button{
 }
 
 button:hover{
-    background: none;
-    border: none;
-    cursor: pointer;
-    background-color: var(--search-bar-back);
-    padding: 5px;
-    height: 35px;
-    width: 35px;
-    border-radius: 10px;
+    transform: (1,1);
 }
 
 .bottom-nav{
@@ -263,12 +256,25 @@ button:hover{
         height: 40px;
     }
 
-    button:hover{
-        background-color: var(--search-bar-back);
-    }
-
     .toolbar{
         display: block;
+    }
+
+    .menu-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border: none;
+        border-radius: 12px;
+        background-color: var(--orange);
+        color: var(--prussian-blue);
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .3s;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .1);   
     }    
 
     section{
@@ -315,6 +321,3 @@ button:hover{
     }
 
 }
-
-
-h1{color: red;}
