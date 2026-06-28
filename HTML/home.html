@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Techno Kia</title>
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/common.css">
 
 </head>
 <body>
@@ -15,7 +16,7 @@
             </div>
             
             <div class="search-bar" id="search-bar">
-                <input type="text" placeholder="...جستوجو" class="search-inp">
+                <input type="text" placeholder="...جستجو" class="search-inp">
                 
                 <button class="search-bnt">
                     <img src="../bnt/search-50.png" class="search-icon">
@@ -32,7 +33,7 @@
         <div class="nav-bar">
             <nav>
                 <a href="./mobile.html">موبایل</a>
-                <a href="#">لب تاپ</a>
+                <a href="#">لپ تاپ</a>
                 <a href="#">هدفون</a>
                 <a href="#">لوازم جانبی</a>
             </nav>
@@ -59,7 +60,7 @@
             <span>تماس با ما</span>
         </a>
         
-        <a href="#"><img src="../bnt/cart-24.png" class="side-bar-btn">
+        <a href="cart.html"><img src="../bnt/cart-24.png" class="side-bar-btn">
             <span>سبد خرید</span>
         </a>
 
@@ -74,28 +75,39 @@
                         
     <section class="product">
         <!-- iphone 17 -->
-            <div class="product-card">
+            <div class="product-card"
+                 data-id="ios-17-pro"
+                 data-name="ایفون ۱۷ پرو مکس"
+                 data-price="527000000"
+                 data-img="../product/iphone17.jpg">
                 <img src="../product/iphone17.jpg" class="product-img">
-                <h3>ایفون ۱۷ پرو مکس</h3>
-                <p class="price">۳۴۴,۹۰۰,۰۰۰ تومان</p>
+                <h3>آیفون ۱۷ پرو مکس</h3>
+                <p class="price">۵۳۸,۰۰۰,۰۰۰ تومان</p>
                 <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
+
             </div>
         
 
         <!-- iphone 16 -->
-
-        
-            <div class="product-card">
+            <div class="product-card" 
+                 data-id="ios-16-pro"
+                 data-name="ایفون ۱۶ پرو مکس"
+                 data-price="229000000"
+                 data-img="../product/iphone16.jpg">
                 <img src="../product/iphone16.jpg" class="product-img">
                 <h3>ایفون ۱۶ پرو مکس</h3>
                 <p class="price">۲۲۸,۰۰۰,۰۰۰ تومان</p>
                 <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
-            </div>
+            </div>  
 
 
         <!-- iphone 15 -->
 
-            <div class="product-card">
+            <div class="product-card"
+                 data-id="ios-15-pro"
+                 data-name="ایفون۱۵ پرو مکس"
+                 data-price="176000000"
+                 data-img="../product/iphone15.jpg">
                 <img src="../product/iphone15.jpg" class="product-img">
                 <h3>ایفون۱۵ پرو مکس</h3>
                 <p class="price">۱۷۸,۰۰۰,۰۰۰ تومان</p>
@@ -105,7 +117,11 @@
         <!-- s26 ultra -->
 
 
-            <div class="product-card">
+            <div class="product-card" 
+                 data-id="sum-26u"
+                 data-name="سامسونگ اس ۲۶ الترا"
+                 data-price="328000000" 
+                 data-img="../product/s-26-ultra.jpg">
                 <img src="../product/s-26-ultra.jpg" class="product-img">
                 <h3>سامسونگ اس ۲۶ الترا</h3>
                 <p class="price">۳۲۸,۰۰۰,۰۰۰ تومان</p>
@@ -115,38 +131,54 @@
         <!-- s25 ultra -->
 
  
-                <div class="product-card">
-                    <img src="../product/s-25-ultra.jpg" class="product-img">
-                    <h3>سامسونگ اس ۲۵ الترا</h3>
-                    <p class="price">۲۲۸,۰۰۰,۰۰۰ تومان</p>
-                    <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
-                </div>
+            <div class="product-card" 
+                    data-id="sum-s25u"
+                    data-name="سامسونگ اس ۲۵ الترا"
+                    data-price="234000000"
+                    data-img="../product/s-25-ultra.jpg">
+                <img src="../product/s-25-ultra.jpg" class="product-img">   
+                <h3>سامسونگ اس ۲۵ الترا</h3>
+                <p class="price">۲۲۸,۰۰۰,۰۰۰ تومان</p>
+                <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
+            </div>
 
         <!-- s24 ultra -->
 
-                <div class="product-card">
-                    <img src="../product/s-24-ultra.jpg" class="product-img">
-                    <h3>سامسونگ اس ۲۴ الترا</h3>
-                    <p class="price">۲۴۸,۰۰۰,۰۰۰ تومان</p>
-                    <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
-                </div>
+            <div class="product-card"
+                    data-id="sum-s24u"
+                    data-name="سامسونگ اس ۲۴ الترا"
+                    data-price="278000000"
+                    data-img="../product/s-24-ultra.jpg" class="product-img">
+                <img src="../product/s-24-ultra.jpg" class="product-img">
+                <h3>سامسونگ اس ۲۴ الترا</h3>
+                <p class="price">۲۴۸,۰۰۰,۰۰۰ تومان</p>
+                <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
+            </div>
 
         <!-- macbook pro m3 -->
 
-                <div class="product-card">
-                    <img src="../product/mackBookPro-m3.jpg" class="product-img">
-                    <h3>m3 مک بوک پرو</h3>
-                    <p class="price">۳۶۸,۰۰۰,۰۰۰ تومان</p>
-                    <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
-                </div>
+            <div class="product-card"
+                data-id="mac-pro-m3"
+                data-name="m3 مک بوک پرو"
+                data-price="214000000"
+                data-img="../product/mackBookPro-m3.jpg">
+                <img src="../product/mackBookPro-m3.jpg" class="product-img">
+                <h3>m3 مک بوک پرو</h3>
+                <p class="price">۳۶۸,۰۰۰,۰۰۰ تومان</p>
+                <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
+            </div>
 
         <!-- sure face pro -->
-                <div class="product-card">
-                    <img src="../product/sure-face.jpg" class="product-img">
-                    <h3>ماکروسافت سرفیس ۲ پرو</h3>
-                    <p class="price">۲۴۸,۰۰۰,۰۰۰ تومان</p>
-                    <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
-                </div>
+            <div class="product-card" 
+                    data-id="sure-pro"
+                    data-name="ماکروسافت سرفیس ۲ پرو"
+                    data-price="320000000"
+                    data-img="../product/sure-face.jpg">
+                <img src="../product/sure-face.jpg" class="product-img">
+                <h3>ماکروسافت سرفیس ۲ پرو</h3>
+                <p class="price">۲۴۸,۰۰۰,۰۰۰ تومان</p>
+                <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
+            </div>
         </section>
     </main>
 
@@ -163,11 +195,11 @@
             <span>تماس با ما</span>
         </a>
         
-        <a href="#"><img src="../bnt/cart-24.png">
+        <a href="cart.html"><img src="../bnt/cart-24.png">
             <span>سبد خرید</span>
         </a>
 
-        <a href="acount.html"><img src="../bnt/user-25.png">
+        <a href="#"><img src="../bnt/user-25.png">
             <span>حساب کاربری</span>
         </a>
     </nav>
@@ -178,9 +210,6 @@
 
 
 
-
-    <script src="../JS/home.js">
- 
-    </script>
+    <script src="../JS/home.js"></script>
 </body>
 </html>

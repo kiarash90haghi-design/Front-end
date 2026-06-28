@@ -23,3 +23,24 @@ menuBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     sidebar.classList.remove("active");
 });
+
+
+const cart_button = document.querySelectorAll(".add-cart");
+
+cart_button.forEach(button => {
+    button.addEventListener("click", () => {
+        const product = button.closest(".product-card");
+
+        const item = {
+            id: product.dataset.id,
+            name: product.dataset.name,
+            price: product.dataset.price,
+            img: product.dataset.img,
+        };
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        cart.push(item);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("محصول به سبد خرید اضافه شد")
+    })
+})

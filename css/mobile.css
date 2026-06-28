@@ -372,6 +372,7 @@ main{
 }
 
 @media(min-width:1200px){
+    
     .product{
         grid-template-columns: repeat(4, 1fr);
     }
