@@ -128,6 +128,12 @@
     display:flex;
     flex-direction:column;
     align-items: center;
+    transition: .6s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.18);
 }
 
 .favorite-btn{

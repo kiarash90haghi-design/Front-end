@@ -32,7 +32,7 @@ cart.forEach(item => {
             </div>
 
             <button class="remove-btn" data-id="${item.id}">
-                حذف
+                 <i class="fa-solid fa-trash"></i>
             </button>
 
         </div>
