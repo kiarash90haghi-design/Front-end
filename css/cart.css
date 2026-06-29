@@ -186,6 +186,72 @@ main{
     transform:scale(1.05);
 }
 
+.quantity-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.quantity-box button{
+    width:35px;
+    height:35px;
+
+    border:none;
+    border-radius:8px;
+
+    background:var(--orange);
+    color:var(--black);
+
+    font-size:20px;
+    font-weight:bold;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.quantity-box button:hover{
+    transform:scale(1.08);
+}
+
+.quantity{
+    min-width:30px;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.item-actions{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.quantity-box{
+    display:flex;
+    gap:6px;
+}
+
+.quantity-box button{
+    width:28px;
+    height:28px;
+    font-size:18px;
+}
+
+.quantity{
+    width:22px;
+    text-align:center;
+}
+
+#posetive{
+    color: var(--white);
+    background-color: rgb(15, 178, 124);
+}
+
+#negeive{
+    color: var(--white);
+    background-color: #fa041d;
+}
 
 @media(min-width:768px){
     .bottom-nav{
