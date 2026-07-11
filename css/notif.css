@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Estedad:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Estedad", "Roboto", sans-serif;
+}
+
+:root {
+    --black: #0b0a0a;
+    --prussian-blue: #14213d;
+    --orange: #fca311;
+    --alabaster-grey: #c7c3c3;
+    --white: #ffffff;
+    --search-bar-back: #0077b6;
+    --side-bar-back: #f5f5f5;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:20px;
+
+    background:var(--prussian-blue);
+    color:var(--white);
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header h1{
+    flex:1;
+    text-align:center;
+
+    font-size:28px;
+    font-weight:700;
+}
+
+.toolbar{
+    display:none;
+}
+
+.menu-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:45px;
+    height:45px;
+
+    border:none;
+    border-radius:12px;
+
+    background:var(--orange);
+    color:var(--prussian-blue);
+
+    font-size:28px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.menu-btn:hover{
+    transform:scale(1.05);
+}
+
+@media (min-width:768px){
+
+    .toolbar{
+        display:block;
+    }
+
+}
+
+/* ================= MAIN ================= */
+
+.notifications{
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.page-title{
+    text-align:right;
+    color:var(--prussian-blue);
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+.notification-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    background:var(--white);
+    padding:20px;
+    margin-bottom:20px;
+
+    border-radius:16px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.notification-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+/* ================= ICON ================= */
+
+.notification-icon{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-width:65px;
+    width:65px;
+    height:65px;
+
+    border-radius:50%;
+
+    color:var(--white);
+
+    font-size:26px;
+}
+
+.notification-icon.success{
+    background:#2ecc71;
+}
+
+.notification-icon.shipping{
+    background:#3498db;
+}
+
+.notification-icon.offer{
+    background:var(--orange);
+}
+
+.notification-icon.gift{
+    background:#9b59b6;
+}
+
+/* ================= CONTENT ================= */
+
+.notification-content{
+    flex:1;
+    text-align:right;
+}
+
+.notification-content h3{
+    color:var(--prussian-blue);
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.notification-content p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+.notification-content span{
+    color:#999;
+    font-size:14px;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:767px){
+
+    .notifications{
+        padding:15px;
+        margin-bottom:90px;
+    }
+
+    .page-title{
+        font-size:24px;
+    }
+
+    .notification-card{
+        padding:16px;
+        gap:15px;
+    }
+
+    .notification-icon{
+        width:55px;
+        height:55px;
+        min-width:55px;
+        font-size:22px;
+    }
+
+    .notification-content h3{
+        font-size:17px;
+    }
+
+    .notification-content p{
+        font-size:14px;
+    }
+
+}
+
+/* ================= SIDE BAR ================= */
+
+.bottom-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+    z-index: 1000;
+}
+
+.bottom-nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    margin: 5px;
+
+    text-decoration: none;
+    color: var(--black);
+    transition: .6s;
+}
+
+.bottom-nav a:hover {
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.toolbar{
+    display: none;
+}
+
+.side-bar{
+    display: none;
+}
+
+@media (min-width:768px){
+
+    .search-bar{
+        flex: 0 1 550px;
+    }
+
+    .search-inp{
+        width: 100%;
+    }
+
+    .product-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+     .bottom-nav{
+        display: none;
+    }
+
+    .toolbar{
+        display: block;
+    }
+
+    .side-bar{
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background-color: var(--side-bar-back);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .1);   
+        border-radius: 10px;
+        flex-direction: column;
+        transition: .4s;
+        z-index: 2000;
+    }
+
+    .side-bar.active{
+        right: 0;
+    }
+
+    .side-bar-header{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .side-bar a{
+        display: flex;
+        margin: 20px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: var(--black);
+        align-items: center;
+        gap: 10px;
+        transition: .6s;
+    }
+
+    .side-bar a:hover{
+        background-color: var(--orange);
+        padding: 12px;
+        border-radius: 10px
+    }
+
+    #close-btn{
+        position: absolute;
+
+        top: 15px;
+        right: 15px;
+
+        font-size: 24px;
+
+        width: 40px;
+        height: 40px;
+    }
+
+    .toolbar{
+        display: block;
+    }
+
+    .menu-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border: none;
+        border-radius: 12px;
+        background-color: var(--orange);
+        color: var(--prussian-blue);
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .3s;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .1);   
+    }
+
+    section{
+        margin-right: 0;
+    }
+
+    .more{
+        position: relative;
+        bottom: 50px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
