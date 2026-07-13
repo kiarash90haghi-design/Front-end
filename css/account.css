@@ -58,9 +58,9 @@ header h1 i{
     right:20px;
 }
 
-/* ================= CONTACT PAGE ================= */
+/* ================= PROFILE PAGE ================= */
 
-.contact-page{
+.profile-page{
     max-width:1200px;
     margin:40px auto;
     padding:20px;
@@ -70,107 +70,304 @@ header h1 i{
     gap:30px;
 }
 
-/* ================= SECTION ================= */
+/* ================= PROFILE CARD ================= */
 
-.contact-info,
-.contact-form{
+.profile-card{
     background:var(--white);
-    border-radius:18px;
-    padding:30px;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
+    border-radius:20px;
+    padding:35px;
 
-.contact-info h2,
-.contact-form h2{
-    color:var(--prussian-blue);
-    margin-bottom:25px;
-    text-align:center;
-}
-
-/* ================= INFO CARD ================= */
-
-.info-card{
     display:flex;
+    flex-direction:column;
     align-items:center;
-    gap:18px;
 
-    padding:18px;
-    margin-bottom:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
 
-    border-radius:14px;
-    background:#fafafa;
+.profile-image{
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+    object-fit:cover;
+
+    border:5px solid var(--orange);
 
     transition:.3s;
 }
 
-.info-card:hover{
-    transform:translateY(-4px);
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+.profile-image:hover{
+    transform:scale(1.08);
 }
 
-.info-card i{
-    width:55px;
-    height:55px;
+.profile-card h2{
+    margin-top:20px;
+    color:var(--prussian-blue);
+}
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.profile-card p{
+    margin-top:10px;
+    color:#777;
+}
 
-    border-radius:50%;
+/* ================= EDIT BUTTON ================= */
+
+.edit-btn{
+
+    margin-top:25px;
+
+    padding:12px 30px;
+
+    border:none;
+    border-radius:12px;
 
     background:var(--orange);
     color:var(--prussian-blue);
 
-    font-size:24px;
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
 }
 
-.info-card h3{
+.edit-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 15px rgba(0,0,0,.15);
+
+}
+
+/* ================= STATS ================= */
+
+.profile-stats{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+.stat-card{
+
+    background:var(--white);
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.stat-card h3{
+
+    color:var(--orange);
+
+    font-size:28px;
+
+}
+
+.stat-card p{
+
+    margin-top:10px;
+
     color:var(--prussian-blue);
-    margin-bottom:5px;
+
 }
 
-.info-card p{
-    color:#666;
-    font-size:15px;
-}
+/* ================= ACCOUNT MENU ================= */
 
-main{
-    padding-bottom:90px;
-}
+.account-menu{
 
-/* ================= FORM ================= */
-
-#contact-form{
     display:flex;
     flex-direction:column;
     gap:18px;
+
 }
 
-#contact-form input,
-#contact-form textarea{
+.menu-card{
 
-    width:100%;
-    padding:14px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-    border:1px solid var(--alabaster-grey);
-    border-radius:10px;
+    padding:20px;
 
-    outline:none;
+    background:var(--white);
 
-    font-size:15px;
+    border-radius:15px;
+
+    text-decoration:none;
+    color:var(--black);
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 
     transition:.3s;
+
 }
 
-#contact-form textarea{
-    resize:vertical;
+.menu-card div{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
 }
 
-#contact-form input:focus,
-#contact-form textarea:focus{
+.menu-card i:first-child{
 
-    border-color:var(--orange);
-    box-shadow:0 0 0 3px rgba(252,163,17,.25);
+    color:var(--orange);
+
+    font-size:22px;
+
+}
+
+.menu-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+
+}
+
+.menu-card:hover i:first-child{
+
+    transform:scale(1.15);
+
+}
+
+/* ================= LOGOUT ================= */
+
+.logout{
+
+    background:#ffe5e5;
+
+    color:#d62828;
+
+}
+
+.logout i{
+
+    color:#d62828 !important;
+
+}
+
+/* ================= SUPPORT ================= */
+
+.support-card{
+
+    background:var(--white);
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.support-card h3{
+
+    color:var(--prussian-blue);
+
+    margin-bottom:15px;
+
+}
+
+.support-card p{
+
+    color:#777;
+
+    margin-bottom:25px;
+
+}
+
+.support-btn{
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--orange);
+
+    color:var(--prussian-blue);
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.support-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ================= TABLET ================= */
+
+@media(min-width:768px){
+
+    .profile-page{
+
+        grid-template-columns:320px 1fr;
+
+        align-items:start;
+
+    }
+
+    .profile-card{
+
+        position:sticky;
+
+        top:30px;
+
+    }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:767px){
+
+    .profile-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ================= DESKTOP ================= */
+
+@media(min-width:1200px){
+
+    .profile-page{
+
+        gap:50px;
+
+    }
 
 }
 
@@ -356,23 +553,4 @@ main{
         width:24px;
         height:24px;
     }
-}
-
-/* ================= DESKTOP ================= */
-
-@media(min-width:1200px){
-
-    .contact-page{
-
-        gap:50px;
-
-    }
-
-    .contact-info{
-
-        position:sticky;
-        top:30px;
-
-    }
-
 }
