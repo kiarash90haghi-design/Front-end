@@ -3,43 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Techno Kia | Mobile</title>
-    <link rel="stylesheet" href="../css/mobile.css">
+    <title>Techno kia | Laptop</title>
+    <link rel="stylesheet" href="../css/laptop.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
         <header>
-            <div class="container">
-                <div class="logo">
-                    <img src="../img/icons8-logo-50.png">
-                </div>
+        <div class="container">
+            <div class="logo">
+                <img src="../img/icons8-logo-50.png">
+            </div>
+            
+            <div class="search-bar" id="search-bar">
+                <input type="text" placeholder="...جستجو" class="search-inp">
                 
-                <div class="search-bar" id="search-bar">
-                    <input type="text" placeholder="...جستجو" class="search-inp">
-                    
-                    <button class="search-bnt">
-                        <img src="../bnt/search-50.png" class="search-icon">
-                    </button>
-                </div>
-
-                <div class="toolbar">
-                    <button id="menu-btn" class="menu-btn">
-                        ☰
-                    </button>
-                </div>
+                <button class="search-bnt">
+                    <img src="../bnt/search-50.png" class="search-icon">
+                </button>
             </div>
 
-            <div class="nav-bar">
-                <nav>
-                    <a href="./home.html">خانه</a>
-                    <a href="./laptop.html">لپ تاپ</a>
-                    <a href="./headPhone.html">هدفون</a>
-                    <a href="#">لوازم جانبی</a>
-                </nav>
+            <div class="toolbar">
+                <button id="menu-btn" class="menu-btn">
+                    ☰
+                </button>
             </div>
+        </div>
+
+        <div class="nav-bar">
+            <nav>
+                <a href="./mobile.html">موبایل</a>
+                <a href="./home.html">خانه</a>
+                <a href="./headPhone.html">هدفون</a>
+                <a href="#">لوازم جانبی</a>
+            </nav>
+        </div>
     </header>
 
-     <aside class="side-bar">
+                        <!-- side bar -->
+    <aside class="side-bar">
         <div class="side-bar-header">
             <img src="../img/icons8-logo-50.png">
             <h2>Techno kia</h2>
@@ -67,18 +68,20 @@
         </a>
     </aside>
 
-    <main>
+        <!-- ========= products======== -->
 
-        <h1 class="heading">موبایل ها</h1>
+         <main>
+
+        <h1 class="heading">لپتاپ ها</h1>
 
         <section class="product-section">        
-            <h2 class="title">موبایل های پرچم دار</h2>
+            <h2 class="title">بهترین لپتاپ ها</h2>
             <div class="product-grid">
                 <div class="product-card" 
-                    data-id="ios-17-pro"
-                    data-name="ایفون ۱۷ پرو مکس"
-                    data-price="538000000"
-                    data-img="../product/iphone17.jpg">
+                    data-id="sureFace-pro"
+                    data-name="سرفیس پرو"
+                    data-price="238000000"
+                    data-img="../product/sure-face.jpg">
                     
                     <button class="favorite-btn">
                         <i class="fa-regular fa-heart"></i>
@@ -86,20 +89,20 @@
                     <div class="badge">
                         جدید
                     </div>
-                    <img src="../product/iphone17.jpg" class="product-img">
+                    <img src="../product/sure-face.jpg" class="product-img">
                     <div class="product-info">
-                        <h3>آیفون ۱۷ پرو مکس</h3>
-                        <p class="price">۵۳۸,۰۰۰,۰۰۰ تومان</p>
+                        <h3>ماکروسافت سرفیس پرو  </h3>
+                        <p class="price">۲۳۸,۰۰۰,۰۰۰ تومان</p>
                         <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
                     </div>
                 </div>
 
 
                 <div class="product-card" 
-                    data-id="sum-26u"
-                    data-name="سامسونگ اس ۲۶ الترا"
-                    data-price="236000000" 
-                    data-img="../product/s-26-ultra.jpg">
+                    data-id="mac-m3-pro"
+                    data-name="مک بوک ام ۳ پرو"
+                    data-price="546000000" 
+                    data-img="../product/mackBookPro-m3.jpg">
 
                     <button class="favorite-btn">
                         <i class="fa-regular fa-heart"></i>
@@ -107,17 +110,17 @@
                     <div class="badge">
                         جدید
                     </div>
-                    <img src="../product/s-26-ultra.jpg" class="product-img">
+                    <img src="../product/mackBookPro-m3.jpg" class="product-img">
                     <div class="product-info">
-                        <h3>گلکسی اس ۲۶ الترا</h3>
-                        <p class="price">۲۳۶,۰۰۰,۰۰۰ تومان</p>
+                        <h3>مک بوک ام ۳ پرو</h3>
+                        <p class="price">۵۴۶,۰۰۰,۰۰۰ تومان</p>
                         <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
                     </div>
                 </div>
 
                 <div class="product-card"
-                    data-id="ios-16-pro"
-                    data-name="ایفون ۱۶ پرو مکس"
+                    data-id="sure-6"
+                    data-name="ماکروسافت سرفیس ۶"
                     data-price="319000000"
                     data-img="../product/iphone16.jpg">
 
@@ -127,19 +130,19 @@
                     <div class="badge">
                         جدید
                     </div>
-                    <img src="../product/iphone16.jpg" class="product-img">
+                    <img src="../product/sure-face-6.jpg" class="product-img">
                     <div class="product-info">
-                        <h3>آیفون ۱۶ پرو مکس</h3>
+                        <h3>ماکروسافت سرفیس ۶</h3>
                         <p class="price">۳۱۹,۰۰۰,۰۰۰ تومان</p>
                         <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
                     </div>
                 </div>
 
                 <div class="product-card"
-                    data-id="sum-s25u"
-                    data-name="سامسونگ اس ۲۵ الترا"
-                    data-price="234000000"
-                    data-img="../product/s-25-ultra.jpg">
+                    data-id="mac-air"
+                    data-name="مک بوک ایر "
+                    data-price="344000000"
+                    data-img="../product/mackBook-air.jpg">
 
                     <button class="favorite-btn">
                        <i class="fa-regular fa-heart"></i>
@@ -147,10 +150,10 @@
                     <div class="badge">
                         جدید
                     </div>
-                    <img src="../product/s-25-ultra.jpg" class="product-img">
+                    <img src="../product/mackBook-air.jpg" class="product-img">
                     <div class="product-info">
-                        <h3>گلکسی اس ۲۵ الترا</h3>
-                        <p class="price">۲۳۸,۰۰۰,۰۰۰ تومان</p>
+                        <h3>۱۴ مک بوک ایر </h3>
+                        <p class="price">۳۴۴,۰۰۰,۰۰۰ تومان</p>
                         <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
                     </div>
                 </div>
@@ -160,53 +163,32 @@
 
             <!-- eghtesadi -->
         <section class="product-section">
-            <h2 class="title">گوشی های اقتصادی</h2>
+            <h2 class="title">لپتاپ های اقتصادی</h2>
             <div class="product-grid">
                 <div class="product-card"
-                     data-id="sum-a55"
-                     data-name="a۵۵ گلکسی"
-                     data-price="84000000"
+                     data-id="dell-i5"
+                     data-name="دل اینسپریشن کورای ۵"
+                     data-price="108000000"
                      data-img="../product/sum-a55.jpg">
-
                     <button class="favorite-btn">
                         <i class="fa-regular fa-heart"></i>
                     </button>
                     <div class="badge">
                         اقتصادی
                     </div>
-                    <img src="../product/sum-a55.jpg" class="product-img">
+                    <img src="../product/dell-i5.jpg" class="product-img">
                     <div class="product-info">
-                        <h3>a۵۵ گلکسی</h3>
-                        <p class="price">۸۳,۰۰۰,۰۰۰ تومان</p>
-                        <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
-                    </div>
-                </div>
-
-                <div class="product-card" 
-                     data-id="sum-a36"
-                     data-name="a۳۶ گلکسی"
-                     data-price="83000000"
-                     data-img="../product/sum-a36.jpg">
-
-                    <button class="favorite-btn">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-                    <div class="badge">
-                        اقتصادی
-                    </div>
-                    <img src="../product/sum-a36.jpg" class="product-img">
-                    <div class="product-info">
-                        <h3>a۳۶ گلکسی</h3>
-                        <p class="price">۸۳,۰۰۰,۰۰۰ تومان</p>
+                        <h3>دل اینسپریشن کورای ۵</h3>
+                        <p class="price">۱۰۸,۰۰۰,۰۰۰ تومان</p>
                         <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
                     </div>
                 </div>
 
                 <div class="product-card"
-                     data-id="poxo-x3pro"
-                     data-name="پوکو ایکس ۳ پرو"
-                     data-price="46000000"
-                     data-img="../product/poco-x3-pro.jpg">
+                     data-id="lenovo-yoga"
+                     data-name="لپتاپ لنو مدل یوگا"
+                     data-price="230000000"
+                     data-img="../product/lenovo.yoga-9.jpg">
 
                     <button class="favorite-btn">
                         <i class="fa-regular fa-heart"></i>
@@ -214,37 +196,61 @@
                     <div class="badge">
                         اقتصادی
                     </div>
-                    <img src="../product/poco-x3-pro.jpg" class="product-img">
+                    <img src="../product/lenovo.yoga-9.jpg" class="product-img">
                     <div class="product-info">
-                        <h3>پوکو ایکس ۳ پرو</h3>
-                        <p class="price">۴۶,۰۰۰,۰۰۰ تومان</p>
+                        <h3>لپتاپ لنو مدل یوگا</h3>
+                        <p class="price">۲۳۰,۰۰۰,۰۰۰ تومان</p>
                         <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
                     </div>
                 </div>
 
                 <div class="product-card"
-                     data-id="redminote-10pro"
-                     data-name="ردمی نت ۱۰ پرو"
-                     data-price="37000000" 
-                     data-img="../product/redmi-note-10pro.jpg">
+                     data-id="mac-air-15"
+                     data-name="مک بوک ایر ۱۰"
+                     data-price="134000000"
+                     data-img="">
+
                     <button class="favorite-btn">
                         <i class="fa-regular fa-heart"></i>
                     </button>
                     <div class="badge">
                         اقتصادی
                     </div>
-                    <img src="../product/redmi-note-10pro.jpg" class="product-img">
+                    <img src="../product/mackBook-air-15.jpg" class="product-img">
+                    <div class="product-info">
+                        <h3>مک بوک ایر ۱۰</h3>
+                        <p class="price">۱۳۴,۰۰۰,۰۰۰ تومان</p>
+                        <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
+                    </div>
+                </div>
+
+                <div class="product-card"
+                     data-id="sure-face-4"
+                     data-name="ماکروسافت سرفیس ۴ پرو"
+                     data-price="106000000" 
+                     data-img="../product/sure-face-4.jpg">
+                    <button class="favorite-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <div class="badge">
+                        اقتصادی
+                    </div>
+                    <img src="../product/sure-face-4.jpg" class="product-img">
                     <div class="product-info">    
-                        <h3>ردمی نت ۱۰ پرو</h3>
-                        <p class="price">۳۷,۰۰۰,۰۰۰ تومان</p>
+                        <h3>ماکروسافت سرفیس ۴ پرو</h3>
+                        <p class="price">۱۰۶,۰۰۰,۰۰۰ تومان</p>
                         <button class="add-cart"><img src="../bnt/plus-25.png" class="add-cart-icon"></button>
                     </div>
                 </div>
+            </div>
         </section>
 
+        <!-- mian rade -->
     </main>
 
-    <nav class="bottom-nav">
+
+
+        <nav class="bottom-nav">
         <a href="./notif.html"><img src="../bnt/notification-25.png">
             <span>پیام ها</span>
         </a>
@@ -262,7 +268,6 @@
         </a>
     </nav>
 
-    <script src="../JS/mobile.js"></script>
-
+    <script src="../JS/laptop.js"></script>
 </body>
 </html>
